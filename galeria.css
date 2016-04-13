@@ -1,0 +1,61 @@
+.contenedorvisor{
+position: relative;
+width: 800px;
+height: 700px;
+margin: 0 auto;
+text-align: center;
+overflow: hidden;
+}
+.contenedorvisor a{
+display: inline;
+text-decoration: none;
+}
+.contenedorvisor a span{
+position: absolute;
+top: 80px;
+left:  5%;
+color: black;
+padding: 5px;
+background: rgba(255,255,255,.3);
+}
+.miniatura{
+width: 17%;
+margin: 1px;
+border: 3px solid black;
+opacity: 1;
+}
+.grande{
+width: 100%;
+position: absolute;
+top: 800px;
+margin: 0 auto;
+text-align: center;
+display: block;
+-webkit-transition: top 1s ease;
+-moz-transition: top 1s ease;
+-o-transition: top 1s ease;
+-ms-transition: top 1s ease;
+transition:top 1s ease;
+}
+.muestra{
+opacity: .3;
+width: 200%;
+top: 170px;
+}
+a:hover.miniatura{
+border: 3px solid grey;
+opacity:  .5;
+}
+a:hover .grande{
+top: 170px;
+-webkit-transition: top 1s ease;
+-moz-transition: top 1s ease;
+-o-transition: top 1s ease;
+-ms-transition: top 1s ease;
+transition: top 1s ease;
+z-index: 3;
+}
+a:hover span{
+top: 190px;
+z-index: 3;
+}
